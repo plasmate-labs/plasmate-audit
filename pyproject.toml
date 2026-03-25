@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plasmate-audit"
+version = "0.1.0"
+description = "Site auditing powered by Plasmate - 10x faster than Chrome-based tools"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Plasmate Labs" },
+]
+keywords = ["seo", "audit", "plasmate", "site-audit", "crawler"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+
+[project.urls]
+Homepage = "https://github.com/plasmate-labs/plasmate-audit"
+Repository = "https://github.com/plasmate-labs/plasmate-audit"
+Issues = "https://github.com/plasmate-labs/plasmate-audit/issues"
+
+[project.scripts]
+plasmate-audit = "plasmate_audit.cli:main"
